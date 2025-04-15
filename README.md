@@ -11,4 +11,4 @@ This portfolio includes examples of:
 
 Let’s connect:  
 🔗 [LinkedIn](https://www.linkedin.com/in/kravtsova-tani/)  
-📧 kravtsova.email@gmail.com  
+📧 tani.kravtsova@gmail.com
