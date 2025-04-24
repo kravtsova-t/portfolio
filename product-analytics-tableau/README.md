@@ -52,14 +52,14 @@ Includes KPI tiles and statistical test results.
 │   └── ab_test_cohort.csv
 ├── 📁 screenshots/                  
 │   ├── retention_preview.png
-│   └── ab_test_preview.png </pre>
+│   └── ab_test_preview.png
 ├── 📁 sql/ 
 │   ├── funnel.sql
 │   ├── kpi.sql
 │   ├── retention_matrix.sql
 │   ├── ab_test.sql
-│   └── ab_test_cohort.sql
-
+│   └── ab_test_cohort.sql </pre>
+ 
 ---
 
 ## 📥 How to View
