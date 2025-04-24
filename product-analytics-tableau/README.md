@@ -50,15 +50,16 @@ Includes KPI tiles and statistical test results.
 │   ├── retention_matrix.csv
 │   ├── ab_test.csv
 │   └── ab_test_cohort.csv
+├── 📁 screenshots/                  
+│   ├── retention_preview.png
+│   └── ab_test_preview.png </pre>
 ├── 📁 sql/ 
 │   ├── funnel.sql
 │   ├── kpi.sql
 │   ├── retention_matrix.sql
 │   ├── ab_test.sql
 │   └── ab_test_cohort.sql
-├── 📁 screenshots/                  
-│   ├── retention_preview.png
-│   └── ab_test_preview.png </pre>
+
 ---
 
 ## 📥 How to View
