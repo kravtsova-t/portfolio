@@ -39,12 +39,12 @@ Includes KPI tiles and statistical test results.
 
 ## 📁 Folder Structure
 
-📁 product-analytics-tableau/
+<pre> 📁 product-analytics-tableau/
 ├── 📄 README.md                      
 ├── 📁 dashboards/                    
-│   ├── retention_dashboard.twbx      
-│   └── ab_test_dashboard.twbx        
-├── 📁 data/                          
+│   ├── retention_dashboard.twbx
+│   └── ab_test_dashboard.twbx   
+├── 📁 data/       
 │   ├── funnel.csv
 │   ├── kpi.csv
 │   ├── retention_matrix.csv
@@ -58,8 +58,7 @@ Includes KPI tiles and statistical test results.
 │   └── ab_test_cohort.sql
 ├── 📁 screenshots/                  
 │   ├── retention_preview.png
-│   └── ab_test_preview.png
-
+│   └── ab_test_preview.png </pre>
 ---
 
 ## 📥 How to View
