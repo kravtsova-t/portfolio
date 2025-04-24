@@ -1,0 +1,6 @@
+"step","name","users","conversion_from_step1","conversion_from_previous"
+"Step 1","Registered","159729","1",NULL
+"Step 2","Logged In Day 1","6401","0.0401",NULL
+"Step 3","Logged In Day 3","980","0.0061","0.1531"
+"Step 4","Logged In Day 5","146","0.0009","0.1490"
+"Step 5","Logged In Day 7","26","0.0002","0.1781"

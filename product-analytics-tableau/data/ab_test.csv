@@ -1,0 +1,3 @@
+"testgroup","users","paying_users","total_revenue","avg_revenue","arpu","uplift_arpu","uplift_arpu_label","arppu","uplift_arppu","uplift_arppu_label","pct_paying_users","uplift_pct_paying_users","uplift_pct_paying_users_label"
+"a","80058","740","2149296","26.85","26.85",NULL,NULL,"2904",NULL,NULL,"0.0092",NULL,NULL
+"b","79671","714","2149047","26.97","26.97","0.0045","↑ 0.45%","3010","0.0365","↑ 3.65%","0.0090","-0.0002","↓ 0.02%"
