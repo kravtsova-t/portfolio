@@ -1,0 +1,2613 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ab_test' inline='true' name='federated.0jwnt8m1mws27s12ws2d31g29h2p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ab_test' name='textscan.0b68dfe1tcv12v16tuobk1hhy3sf'>
+            <connection class='textscan' directory='C:/Users/tani/Documents/portfolio_Data_Analyst' filename='ab_test.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0b68dfe1tcv12v16tuobk1hhy3sf' name='ab_test.csv' table='[ab_test#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='testgroup' ordinal='0' />
+            <column datatype='integer' name='users' ordinal='1' />
+            <column datatype='integer' name='paying_users' ordinal='2' />
+            <column datatype='integer' name='total_revenue' ordinal='3' />
+            <column datatype='real' name='avg_revenue' ordinal='4' />
+            <column datatype='real' name='arpu' ordinal='5' />
+            <column datatype='real' name='uplift_arpu' ordinal='6' />
+            <column datatype='string' name='uplift_arpu_label' ordinal='7' />
+            <column datatype='integer' name='arppu' ordinal='8' />
+            <column datatype='real' name='uplift_arppu' ordinal='9' />
+            <column datatype='string' name='uplift_arppu_label' ordinal='10' />
+            <column datatype='real' name='pct_paying_users' ordinal='11' />
+            <column datatype='real' name='uplift_pct_paying_users' ordinal='12' />
+            <column datatype='string' name='uplift_pct_paying_users_label' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>testgroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[testgroup]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>testgroup</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[users]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paying_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[paying_users]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>paying_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_revenue]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>avg_revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arpu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[arpu]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>arpu</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_arpu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uplift_arpu]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_arpu</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_arpu_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uplift_arpu_label]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_arpu_label</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arppu</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[arppu]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>arppu</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_arppu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uplift_arppu]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_arppu</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_arppu_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uplift_arppu_label]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_arppu_label</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_paying_users</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_paying_users]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>pct_paying_users</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_pct_paying_users</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uplift_pct_paying_users]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_pct_paying_users</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uplift_pct_paying_users_label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uplift_pct_paying_users_label]</local-name>
+            <parent-name>[ab_test.csv]</parent-name>
+            <remote-alias>uplift_pct_paying_users_label</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ab_test.csv' datatype='table' name='[__tableau_internal_object_id__].[ab_test.csv_3203011A9C34420A85A51B9889F72410]' role='measure' type='quantitative' />
+      <column caption='Arppu' datatype='integer' name='[arppu]' role='measure' type='quantitative' />
+      <column caption='Arpu' datatype='real' name='[arpu]' role='measure' type='quantitative' />
+      <column caption='Avg Revenue' datatype='real' name='[avg_revenue]' role='measure' type='quantitative' />
+      <column caption='Paying Users' datatype='integer' name='[paying_users]' role='measure' type='quantitative' />
+      <column caption='Pct Paying Users' datatype='real' name='[pct_paying_users]' role='measure' type='quantitative' />
+      <column caption='Testgroup' datatype='string' name='[testgroup]' role='dimension' type='nominal' />
+      <column caption='Total Revenue' datatype='integer' name='[total_revenue]' role='measure' type='quantitative' />
+      <column caption='Uplift Arppu' datatype='real' name='[uplift_arppu]' role='measure' type='quantitative' />
+      <column caption='Uplift Arppu Label' datatype='string' name='[uplift_arppu_label]' role='dimension' type='nominal' />
+      <column caption='Uplift Arpu' datatype='real' name='[uplift_arpu]' role='measure' type='quantitative' />
+      <column caption='Uplift Arpu Label' datatype='string' name='[uplift_arpu_label]' role='dimension' type='nominal' />
+      <column caption='Uplift Pct Paying Users' datatype='real' name='[uplift_pct_paying_users]' role='measure' type='quantitative' />
+      <column caption='Uplift Pct Paying Users Label' datatype='string' name='[uplift_pct_paying_users_label]' role='dimension' type='nominal' />
+      <column caption='Users' datatype='integer' name='[users]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tani/AppData/Local/Temp/TableauTemp/#TableauTemp_1p7ptmf1pmtzs510qdqt10dwn3s5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/23/2025 10:42:42 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='ab_test' increment-value='%null%' refresh-type='create' rows-inserted='2' timestamp-start='2025-04-23 22:42:41.285' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>testgroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[testgroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>testgroup</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paying_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paying_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arpu</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[arpu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arpu</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_arpu</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uplift_arpu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_arpu</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_arpu_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[uplift_arpu_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_arpu_label</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arppu</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[arppu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arppu</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_arppu</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uplift_arppu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_arppu</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_arppu_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[uplift_arppu_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_arppu_label</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct_paying_users</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct_paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct_paying_users</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_pct_paying_users</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uplift_pct_paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_pct_paying_users</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uplift_pct_paying_users_label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[uplift_pct_paying_users_label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uplift_pct_paying_users_label</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ab_test.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ab_test.csv_3203011A9C34420A85A51B9889F72410]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ab_test.csv' id='ab_test.csv_3203011A9C34420A85A51B9889F72410'>
+            <properties context=''>
+              <relation connection='textscan.0b68dfe1tcv12v16tuobk1hhy3sf' name='ab_test.csv' table='[ab_test#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='testgroup' ordinal='0' />
+                  <column datatype='integer' name='users' ordinal='1' />
+                  <column datatype='integer' name='paying_users' ordinal='2' />
+                  <column datatype='integer' name='total_revenue' ordinal='3' />
+                  <column datatype='real' name='avg_revenue' ordinal='4' />
+                  <column datatype='real' name='arpu' ordinal='5' />
+                  <column datatype='real' name='uplift_arpu' ordinal='6' />
+                  <column datatype='string' name='uplift_arpu_label' ordinal='7' />
+                  <column datatype='integer' name='arppu' ordinal='8' />
+                  <column datatype='real' name='uplift_arppu' ordinal='9' />
+                  <column datatype='string' name='uplift_arppu_label' ordinal='10' />
+                  <column datatype='real' name='pct_paying_users' ordinal='11' />
+                  <column datatype='real' name='uplift_pct_paying_users' ordinal='12' />
+                  <column datatype='string' name='uplift_pct_paying_users_label' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='retention_matrix' inline='true' name='federated.0spi2j20skrrhy1a7qvh11kcjnda' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='retention_matrix' name='textscan.0jlp5s41ggqj0v1d29yld1awx1gq'>
+            <connection class='textscan' directory='C:/Users/tani/Documents/portfolio_Data_Analyst' filename='retention_matrix.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jlp5s41ggqj0v1d29yld1awx1gq' name='retention_matrix.csv' table='[retention_matrix#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+            <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZ' name='cohort_month' ordinal='0' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZ' name='login_month' ordinal='1' />
+            <column datatype='real' name='retention_rate' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[retention_matrix.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;uk&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₴&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='exponent-char'>&quot;е&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;uk_UA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort_month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[cohort_month]</local-name>
+            <parent-name>[retention_matrix.csv]</parent-name>
+            <remote-alias>cohort_month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>login_month</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[login_month]</local-name>
+            <parent-name>[retention_matrix.csv]</parent-name>
+            <remote-alias>login_month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retention_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[retention_rate]</local-name>
+            <parent-name>[retention_matrix.csv]</parent-name>
+            <remote-alias>retention_rate</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='retention_matrix.csv' datatype='table' name='[__tableau_internal_object_id__].[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]' role='measure' type='quantitative' />
+      <column caption='Registration month' datatype='date' name='[cohort_month]' role='dimension' type='ordinal' />
+      <column caption='Login month' datatype='date' name='[login_month]' role='dimension' type='ordinal' />
+      <column datatype='real' default-format='p0.0%' name='[retention_rate]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tani/AppData/Local/Temp/TableauTemp/#TableauTemp_0osdcry01avf9y13qn0x40eoewhs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/23/2025 10:43:10 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='retention_matrix' increment-value='%null%' refresh-type='create' rows-inserted='78' timestamp-start='2025-04-23 22:43:09.295' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>cohort_month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cohort_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cohort_month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>retention_matrix.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>login_month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[login_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>login_month</remote-alias>
+              <ordinal>1</ordinal>
+              <family>retention_matrix.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retention_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[retention_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retention_rate</remote-alias>
+              <ordinal>2</ordinal>
+              <family>retention_matrix.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='retention_matrix.csv' id='retention_matrix.csv_2A9CED6550D34AADB7002E7BEFAF57D8'>
+            <properties context=''>
+              <relation connection='textscan.0jlp5s41ggqj0v1d29yld1awx1gq' name='retention_matrix.csv' table='[retention_matrix#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZ' name='cohort_month' ordinal='0' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZ' name='login_month' ordinal='1' />
+                  <column datatype='real' name='retention_rate' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='funnel' inline='true' name='federated.142jlgf0my2jh81e9nyx20v35n3r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='funnel' name='textscan.1fmodiv0uo6ynl18vau051nal09y'>
+            <connection class='textscan' directory='C:/Users/tani/Documents/portfolio_Data_Analyst' filename='funnel.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1fmodiv0uo6ynl18vau051nal09y' name='funnel.csv' table='[funnel#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+            <column datatype='string' name='step' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='users' ordinal='2' />
+            <column datatype='real' name='conversion_from_step1' ordinal='3' />
+            <column datatype='real' name='conversion_from_previous' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;uk&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₴&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='exponent-char'>&quot;е&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;uk_UA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[step]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>step</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[users]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversion_from_step1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversion_from_step1]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>conversion_from_step1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conversion_from_previous</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conversion_from_previous]</local-name>
+            <parent-name>[funnel.csv]</parent-name>
+            <remote-alias>conversion_from_previous</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Step 1' datatype='integer' name='[Calculation_469781736734793728]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ATTR([name])=&apos;Registered&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Registered&apos;&#13;&#10;THEN SUM([users]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Arrow + %' datatype='string' name='[Calculation_469781737813712904]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF ROUND([conversion_from_step1], 4) = 1 THEN &quot;&quot;&#13;&#10;ELSE &#13;&#10;  &quot;↓ &quot; + &#13;&#10;  LEFT(STR(INT([conversion_from_step1] * 10000 + 0.5) / 100.0), 5) + &quot;%&quot; + CHAR(10)&#13;&#10;END' />
+      </column>
+      <column caption='Step 5' datatype='integer' name='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 7&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 7&apos;&#13;&#10;THEN SUM([users]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Step 4' datatype='integer' name='[Step 1 (copy) (copy) (copy)_469781736735588355]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 5&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 5&apos;&#13;&#10;THEN SUM([users]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Step 3' datatype='integer' name='[Step 1 (copy) (copy)_469781736735313922]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 3&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 3&apos;&#13;&#10;THEN SUM([users]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Step 2' datatype='integer' name='[Step 1 (copy)_469781736735305729]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 1&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 1&apos;&#13;&#10;THEN SUM([users]) END'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='funnel.csv' datatype='table' name='[__tableau_internal_object_id__].[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[conversion_from_previous]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[conversion_from_step1]' role='measure' type='quantitative' />
+      <column datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[step]' role='dimension' type='nominal' />
+      <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field'>
+          <order field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' />
+          <order field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[name]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[name]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy)_469781736735588355]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy)_469781736735588355]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy) (copy)_469781736735588355]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy)_469781736735313922]' derivation='User' name='[usr:Step 1 (copy) (copy)_469781736735313922:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy)_469781736735313922]' derivation='User' name='[usr:Step 1 (copy) (copy)_469781736735313922:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy) (copy)_469781736735313922]' derivation='User' name='[usr:Step 1 (copy) (copy)_469781736735313922:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy)_469781736735305729]' derivation='User' name='[usr:Step 1 (copy)_469781736735305729:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy)_469781736735305729]' derivation='User' name='[usr:Step 1 (copy)_469781736735305729:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[step]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Step 1 (copy)_469781736735305729]' derivation='User' name='[usr:Step 1 (copy)_469781736735305729:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tani/AppData/Local/Temp/TableauTemp/#TableauTemp_0clmuj71j3mp6q14y3vfu1ptr542.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/23/2025 10:41:47 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='funnel' increment-value='%null%' refresh-type='create' rows-inserted='5' timestamp-start='2025-04-23 22:41:47.032' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step</remote-alias>
+              <ordinal>0</ordinal>
+              <family>funnel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LUK_RUA' />
+              <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>funnel.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LUK_RUA' />
+              <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>funnel.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversion_from_step1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversion_from_step1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversion_from_step1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>funnel.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conversion_from_previous</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conversion_from_previous]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conversion_from_previous</remote-alias>
+              <ordinal>4</ordinal>
+              <family>funnel.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel.csv_7EC0E26B31ED455A834BFEB43E13638A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='5' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:name:nk]' type='palette'>
+            <map to='#385985'>
+              <bucket>&quot;Logged In Day 7&quot;</bucket>
+            </map>
+            <map to='#417ba7'>
+              <bucket>&quot;Logged In Day 5&quot;</bucket>
+            </map>
+            <map to='#4b9fc6'>
+              <bucket>&quot;Logged In Day 3&quot;</bucket>
+            </map>
+            <map to='#5ac4e2'>
+              <bucket>&quot;Logged In Day 1&quot;</bucket>
+            </map>
+            <map to='#ffffff'>
+              <bucket>&quot;Registered&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#385985'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk:2]&quot;</bucket>
+            </map>
+            <map to='#385985'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk]&quot;</bucket>
+            </map>
+            <map to='#417ba7'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk:3]&quot;</bucket>
+            </map>
+            <map to='#417ba7'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk]&quot;</bucket>
+            </map>
+            <map to='#4b9fc6'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy)_469781736735313922:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4b9fc6'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy)_469781736735313922:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:1]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk:1]&quot;</bucket>
+            </map>
+            <map to='#5ac4e2'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy)_469781736735305729:qk:3]&quot;</bucket>
+            </map>
+            <map to='#5ac4e2'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy)_469781736735305729:qk]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:2]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:3]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:4]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:5]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk:6]&quot;</bucket>
+            </map>
+            <map to='#70e9fa'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk:1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy)_469781736735313922:qk:1]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy)_469781736735305729:qk:1]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='funnel.csv' id='funnel.csv_7EC0E26B31ED455A834BFEB43E13638A'>
+            <properties context=''>
+              <relation connection='textscan.1fmodiv0uo6ynl18vau051nal09y' name='funnel.csv' table='[funnel#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+                  <column datatype='string' name='step' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='users' ordinal='2' />
+                  <column datatype='real' name='conversion_from_step1' ordinal='3' />
+                  <column datatype='real' name='conversion_from_previous' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='kpi' inline='true' name='federated.0aiik7m04p5mbv1fgxkvg0v4cx1g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='kpi' name='textscan.13ymf840ihjqpx14dsyu91n7wx0f'>
+            <connection class='textscan' directory='C:/Users/tani/Documents/portfolio_Data_Analyst' filename='kpi.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13ymf840ihjqpx14dsyu91n7wx0f' name='ltv.csv' table='[ltv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+            <column datatype='integer' name='total_users' ordinal='0' />
+            <column datatype='integer' name='paying_users' ordinal='1' />
+            <column datatype='real' name='arpu' ordinal='2' />
+            <column datatype='real' name='arppu' ordinal='3' />
+            <column datatype='real' name='pct_paying_users' ordinal='4' />
+            <column datatype='real' name='ltv' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;uk&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₴&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='exponent-char'>&quot;е&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;uk_UA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_users]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>total_users</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paying_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[paying_users]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>paying_users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arpu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[arpu]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>arpu</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arppu</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[arppu]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>arppu</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_paying_users</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_paying_users]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>pct_paying_users</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ltv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ltv]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>ltv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='kpi.csv' datatype='table' name='[__tableau_internal_object_id__].[ltv.csv_5374B91F4D774557BF9338A961E85DE3]' role='measure' type='quantitative' />
+      <column datatype='real' default-format='p0.00%' name='[pct_paying_users]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/tani/AppData/Local/Temp/TableauTemp/#TableauTemp_0imvy6s0mfm32p13s29o011u6h65.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/23/2025 11:46:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='kpi' increment-value='%null%' refresh-type='create' rows-inserted='1' timestamp-start='2025-04-23 23:46:47.538' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>total_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_users</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ltv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paying_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paying_users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ltv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arpu</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[arpu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arpu</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ltv.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arppu</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[arppu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arppu</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ltv.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct_paying_users</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct_paying_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct_paying_users</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ltv.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ltv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ltv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ltv</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ltv.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ltv.csv_5374B91F4D774557BF9338A961E85DE3]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='kpi.csv' id='ltv.csv_5374B91F4D774557BF9338A961E85DE3'>
+            <properties context=''>
+              <relation connection='textscan.13ymf840ihjqpx14dsyu91n7wx0f' name='ltv.csv' table='[ltv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='uk_UA'>
+                  <column datatype='integer' name='total_users' ordinal='0' />
+                  <column datatype='integer' name='paying_users' ordinal='1' />
+                  <column datatype='real' name='arpu' ordinal='2' />
+                  <column datatype='real' name='arppu' ordinal='3' />
+                  <column datatype='real' name='pct_paying_users' ordinal='4' />
+                  <column datatype='real' name='ltv' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='%'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Segoe UI Symbol'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel' name='federated.142jlgf0my2jh81e9nyx20v35n3r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142jlgf0my2jh81e9nyx20v35n3r'>
+            <column caption='Arrow + %' datatype='string' name='[Calculation_469781737813712904]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF ROUND([conversion_from_step1], 4) = 1 THEN &quot;&quot;&#13;&#10;ELSE &#13;&#10;  &quot;↓ &quot; + &#13;&#10;  LEFT(STR(INT([conversion_from_step1] * 10000 + 0.5) / 100.0), 5) + &quot;%&quot; + CHAR(10)&#13;&#10;END' />
+            </column>
+            <column datatype='real' default-format='p0.00%' name='[conversion_from_step1]' role='measure' type='quantitative' />
+            <column datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_469781737813712904]' derivation='None' name='[none:Calculation_469781737813712904:nk]' pivot='key' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[step]' derivation='None' name='[none:step:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[step]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='103' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:step:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:Calculation_469781737813712904:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='18'>&lt;</run>
+                <run bold='true' fontsize='18'>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:Calculation_469781737813712904:nk]</run>
+                <run bold='true' fontsize='18'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:step:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{ECDB7C9C-21A0-4254-9E90-9B4DE0747108}' />
+    </worksheet>
+    <worksheet name='Funnel'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel' name='federated.142jlgf0my2jh81e9nyx20v35n3r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.142jlgf0my2jh81e9nyx20v35n3r'>
+            <column caption='Step 1' datatype='integer' name='[Calculation_469781736734793728]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ATTR([name])=&apos;Registered&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Registered&apos;&#13;&#10;THEN SUM([users]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Step 5' datatype='integer' name='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 7&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 7&apos;&#13;&#10;THEN SUM([users]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Step 4' datatype='integer' name='[Step 1 (copy) (copy) (copy)_469781736735588355]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 5&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 5&apos;&#13;&#10;THEN SUM([users]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Step 3' datatype='integer' name='[Step 1 (copy) (copy)_469781736735313922]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 3&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 3&apos;&#13;&#10;THEN SUM([users]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Step 2' datatype='integer' name='[Step 1 (copy)_469781736735305729]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF ATTR([name])=&apos;Logged In Day 1&apos; OR&#13;&#10;LOOKUP(ATTR([name]),-1)=&apos;Logged In Day 1&apos;&#13;&#10;THEN SUM([users]) END'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='real' default-format='p0.00%' name='[conversion_from_previous]' role='measure' type='quantitative' />
+            <column datatype='real' default-format='p0.00%' name='[conversion_from_step1]' role='measure' type='quantitative' />
+            <column datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[conversion_from_previous]' derivation='Sum' name='[sum:conversion_from_previous:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conversion_from_step1]' derivation='Sum' name='[sum:conversion_from_step1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[users]' derivation='Sum' name='[sum:users:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[users]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_469781736734793728]' derivation='User' name='[usr:Calculation_469781736734793728:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Step 1 (copy) (copy) (copy) (copy)_469781736735596548]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Step 1 (copy) (copy) (copy)_469781736735588355]' derivation='User' name='[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Step 1 (copy) (copy)_469781736735313922]' derivation='User' name='[usr:Step 1 (copy) (copy)_469781736735313922:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Step 1 (copy)_469781736735305729]' derivation='User' name='[usr:Step 1 (copy)_469781736735305729:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Calculation_469781736734793728:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy)_469781736735305729:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy)_469781736735313922:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy)_469781736735588355:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.142jlgf0my2jh81e9nyx20v35n3r].[usr:Step 1 (copy) (copy) (copy) (copy)_469781736735596548:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Registered&quot;</bucket>
+              <bucket>&quot;Logged In Day 1&quot;</bucket>
+              <bucket>&quot;Logged In Day 3&quot;</bucket>
+              <bucket>&quot;Logged In Day 5&quot;</bucket>
+              <bucket>&quot;Logged In Day 7&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]' field-type='quantitative' reverse='true' scale='log' scope='cols' type='space' />
+            <encoding attr='space' class='1' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]' field-type='quantitative' scale='log' scope='cols' type='space' />
+            <format attr='display' class='0' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]' scope='cols' value='false' />
+            <format attr='display' class='1' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:users:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:users:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'>&lt;</run>
+                <run bold='true' fontsize='10'>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]</run>
+                <run bold='true' fontsize='10'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values]' x-index='1'>
+            <view>
+              <breakdown value='off' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:conversion_from_step1:qk]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:conversion_from_previous:qk]' />
+              <text column='[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:users:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.142jlgf0my2jh81e9nyx20v35n3r].[sum:users:qk]> ]]></run>
+                <run fontsize='10'>users</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='12' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]</rows>
+        <cols>([federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values] + [federated.142jlgf0my2jh81e9nyx20v35n3r].[Multiple Values])</cols>
+      </table>
+      <simple-id uuid='{A5D8F482-3C39-48ED-B18E-F57A7ABDE8E4}' />
+    </worksheet>
+    <worksheet name='Retention matrix'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='retention_matrix' name='federated.0spi2j20skrrhy1a7qvh11kcjnda' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0spi2j20skrrhy1a7qvh11kcjnda'>
+            <column caption='Registration month' datatype='date' name='[cohort_month]' role='dimension' type='ordinal' />
+            <column caption='Login month' datatype='date' name='[login_month]' role='dimension' type='ordinal' />
+            <column-instance column='[cohort_month]' derivation='Month' name='[mn:cohort_month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[login_month]' derivation='Month' name='[mn:login_month:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' default-format='p0.0%' name='[retention_rate]' role='measure' type='quantitative' />
+            <column-instance column='[retention_rate]' derivation='Sum' name='[sum:retention_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' scope='rows' value='dotted' />
+            <format attr='border-color' scope='rows' value='#a7acad' />
+            <format attr='border-width' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0spi2j20skrrhy1a7qvh11kcjnda].[mn:cohort_month:ok]' value='88' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.070000000000000007' field='[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='band-level' scope='cols' value='0' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]' />
+              <text column='[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='9'>&lt;</run>
+                <run fontsize='9'>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]</run>
+                <run fontsize='9'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='3.5690608024597168' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[mn:cohort_month:ok]</rows>
+        <cols>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[mn:login_month:ok]</cols>
+      </table>
+      <simple-id uuid='{AB971B40-4D82-477B-8988-E7D807AE20F8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Retention &amp; KPI Dashboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Retention &amp; LTV Dashboard – 2018 Cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98214' id='45' param='horz' type-v2='layout-flow' w='99064' x='468' y='893'>
+            <zone h='98214' id='43' type-v2='layout-basic' w='99064' x='468' y='893'>
+              <zone h='98214' id='20' param='vert' type-v2='layout-flow' w='95330' x='2306' y='893'>
+                <zone h='98214' id='7' param='horz' type-v2='layout-flow' w='95330' x='2306' y='893'>
+                  <zone h='98214' id='5' type-v2='layout-basic' w='95330' x='2306' y='893'>
+                    <zone h='63615' id='3' name='Funnel' show-title='false' w='40594' x='2306' y='23434'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='63526' id='8' name='Retention matrix' show-title='false' w='43946' x='53690' y='23280'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='12378' id='21' type-v2='text' w='95330' x='2306' y='893'>
+                      <formatted-text>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Funnel &amp; Retention Dashboard – 2018 year</run>
+                        <run>Æ&#10;</run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Track funnel performance, cohort retention.</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='12058' id='23' type-v2='text' w='49318' x='2306' y='87049'>
+                      <formatted-text>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Summary funnel: </run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>The login funnel shows a significant drop in user activity within the first week after registration.</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>While a portion of users return on Day 1, the retention steadily declines by Day 3, Day 5, and Day 7.</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>This indicates a need to strengthen early user engagement and activation strategies to reduce drop-off at each step.</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='12301' id='25' type-v2='text' w='43946' x='53690' y='86806'>
+                      <formatted-text>
+                        <run bold='true' fontcolor='#111111' fontname='Benton Sans Book' fontsize='11'>Summary retention:</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#111111' fontname='Benton Sans Book' fontsize='10'>The retention matrix reveals how user activity declines over time across monthly cohorts. While initial month-over-month retention is visible in early cohorts, there is a clear downward trend in user return rates after the first month. This pattern indicates a need to improve long-term engagement strategies and reactivation efforts.</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='3686' id='27' type-v2='text' w='43946' x='53690' y='13271'>
+                      <formatted-text>
+                        <run>Æ&#10;</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='3736' id='28' type-v2='text' w='49318' x='2306' y='13271'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='6323' id='29' type-v2='text' w='43946' x='53690' y='16957'>
+                      <formatted-text>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>🧩 </run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Retention matrix</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>It visualizes user retention month-over-month starting from their registration cohort.</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='6427' id='30' type-v2='text' w='40594' x='2306' y='17007'>
+                      <formatted-text>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>🔄 </run>
+                        <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>User Login Funnel</run>
+                        <run>Æ&#10;</run>
+                        <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>This funnel shows how users move through the first login moments following their signup.</run>
+                      </formatted-text>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone forceUpdate='true' h='85836' id='32' type-v2='text' w='2066' x='51624' y='13271'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='64541' id='42' name='%' show-title='false' w='8724' x='42900' y='17007'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='5501' id='54' type-v2='text' w='8724' x='42900' y='81548'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='98214' id='33' type-v2='text' w='1896' x='97636' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='98214' id='34' type-v2='text' w='1838' x='468' y='893'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Retention &amp; LTV Dashboard – 2018 Cohort</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98214' id='71' param='vert' type-v2='layout-flow' w='99064' x='468' y='893'>
+                <zone h='98214' id='34' type-v2='text' w='1838' x='468' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='12378' id='21' type-v2='text' w='95330' x='2306' y='893'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='18'>Funnel &amp; Retention Dashboard – 2018 year</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>Track funnel performance, cohort retention.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='98214' id='33' type-v2='text' w='1896' x='97636' y='893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3736' id='28' type-v2='text' w='49318' x='2306' y='13271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='85836' id='32' type-v2='text' w='2066' x='51624' y='13271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3686' id='27' type-v2='text' w='43946' x='53690' y='13271'>
+                  <formatted-text>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6323' id='29' type-v2='text' w='43946' x='53690' y='16957'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>🧩 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>Retention matrix</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>It visualizes user retention month-over-month starting from their registration cohort.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='6427' id='30' type-v2='text' w='40594' x='2306' y='17007'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>🔄 </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>User Login Funnel</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>This funnel shows how users move through the first login moments following their signup.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='64541' id='42' is-fixed='true' name='%' show-title='false' w='8724' x='42900' y='17007'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63526' id='8' is-fixed='true' name='Retention matrix' show-title='false' w='43946' x='53690' y='23280'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63615' id='3' is-fixed='true' name='Funnel' show-title='false' w='40594' x='2306' y='23434'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5501' id='54' type-v2='text' w='8724' x='42900' y='81548'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='12301' id='25' type-v2='text' w='43946' x='53690' y='86806'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#111111' fontname='Benton Sans Book' fontsize='11'>Summary retention:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#111111' fontname='Benton Sans Book' fontsize='10'>The retention matrix reveals how user activity declines over time across monthly cohorts. While initial month-over-month retention is visible in early cohorts, there is a clear downward trend in user return rates after the first month. This pattern indicates a need to improve long-term engagement strategies and reactivation efforts.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='12058' id='23' type-v2='text' w='49318' x='2306' y='87049'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Summary funnel: </run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>The login funnel shows a significant drop in user activity within the first week after registration.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>While a portion of users return on Day 1, the retention steadily declines by Day 3, Day 5, and Day 7.</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='10'>This indicates a need to strengthen early user engagement and activation strategies to reduce drop-off at each step.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1A66DB9A-1478-4726-9FD8-B0F29FE38B15}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='dashboard' maximized='true' name='Retention &amp; KPI Dashboard'>
+      <viewpoints>
+        <viewpoint name='%'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Funnel'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Retention matrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{681667D7-510B-4A5F-B16F-2FE65C4FD1B0}' />
+    </window>
+    <window class='worksheet' name='Funnel'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='185'>
+            <card pane-specification-id='1' param='[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[:Measure Names]</field>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]</field>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:step:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8A2D1A16-882E-41F6-9E9C-B750EA72CB9C}' />
+    </window>
+    <window class='worksheet' name='%'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:Calculation_469781737813712904:nk]</field>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:Calculation_469781737818759177:nk]</field>
+            <field>[federated.142jlgf0my2jh81e9nyx20v35n3r].[none:name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{558003FB-829D-458A-B245-5FCE819C9D30}' />
+    </window>
+    <window class='worksheet' name='Retention matrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[mn:cohort_month:ok]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[mn:login_month:ok]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[qr:login_month:ok]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:Calculation_469781736771883015:qk]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[sum:retention_rate:qk]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[yr:cohort_month:ok]</field>
+            <field>[federated.0spi2j20skrrhy1a7qvh11kcjnda].[yr:login_month:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C45BF203-0152-407C-A39D-80EF30B46104}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='%' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Funnel' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Retention &amp; KPI Dashboard' width='192'>
+      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
+      /eZ9AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Retention matrix' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
