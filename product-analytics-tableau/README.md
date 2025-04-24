@@ -37,13 +37,6 @@ Includes KPI tiles and statistical test results.
 
 ---
 
-## 📌 Insights & Findings
-- Group B showed slightly higher ARPU and ARPPU.
-- Retention dropped most sharply between Day 1 and Day 3.
-- A/B uplift was not statistically significant.
-
----
-
 ## 📁 Folder Structure
 
 <pre> 📁 product-analytics-tableau/
@@ -97,6 +90,13 @@ Before building dashboards in Tableau, the raw CSV files from Kaggle were proces
 
 > ✅ This preprocessing ensured clean, structured data before visualizing it in Tableau.
 
+---
+
+## 📌 Insights & Findings
+- Group B showed slightly higher ARPU and ARPPU.
+- Retention dropped most sharply between Day 1 and Day 3.
+- A/B uplift was not statistically significant.
+  
 ---
 
 ## 📦 Dataset
