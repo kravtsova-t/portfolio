@@ -53,7 +53,6 @@ google-trends-analysis/
 ├── collect_data.py             # Fetching Google Trends data
 ├── decompose.py                # Time series decomposition logic
 ├── upload_to_bigquery.py       # BigQuery interaction
-├── visualize.py (optional)     # Seasonal plots (if needed)
 ├── requirements.txt
 └── README.md
 ```
@@ -64,8 +63,7 @@ google-trends-analysis/
 
 - [pytrends library (Unofficial Google Trends API) on GitHub](https://github.com/GeneralMills/pytrends)
 - [pytrends on PyPI](https://pypi.org/project/pytrends/)
-- [Google BigQuery Documentation](https://cloud.google.com/bigquery/docs)
-- [Cloud Run Python Functions](https://cloud.google.com/run/docs/quickstarts/build-and-deploy/python)
+- [Deploy functions in Cloud Run](https://cloud.google.com/run/docs/deploy-functions)
 
 ---
 
