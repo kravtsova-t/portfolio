@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ## 📁 Project Structure
 
 ```text
-google-trends-analysis/
+google-trends-bigquery-pipeline/
 ├── main.py                     # Entry point for data collection & processing
 ├── collect_data.py             # Fetching Google Trends data
 ├── decompose.py                # Time series decomposition logic
